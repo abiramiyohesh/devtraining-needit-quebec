@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="New WS Import " max_length="40" name="x_58872_needit_new_ws_import" sizeclass="0" type="collection">
+        <element label="Requested for" max_length="32" name="requested_for" reference="sys_user" type="reference"/>
+        <element label="short desc" max_length="100" name="short_desc" type="string"/>
+        <element label="When needed" max_length="40" name="when_needed" type="glide_date_time"/>
+        <index name="index">
+            <element name="requested_for"/>
+        </index>
+    </element>
+</database>
